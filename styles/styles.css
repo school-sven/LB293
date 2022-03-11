@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 5%;
+    background-color: rgb(59, 59, 235);
+}
+
+.linkSaverIcon {
+    margin-left: .5%;
+    height: 60%;
+    vertical-align: middle;
+}
+
+
+.userIcon {
+    margin-right: 1%; 
+    height: 60%;
+}
+
+.titleFont {
+    color: #ffff;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 1%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.standardFont {
+    color: #ffff;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
