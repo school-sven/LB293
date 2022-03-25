@@ -39,6 +39,14 @@ body {
   width: 10%;
 }
 
+.notDraggable {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .navLinks {
   float: right;
   margin-right: 1%;
@@ -88,11 +96,6 @@ body {
 
 .logInIcon {
   height: 50%;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .signUpInput {
