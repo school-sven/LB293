@@ -6,26 +6,42 @@ body {
   
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 50;
   background-color: rgb(59, 59, 235);
 }
 
-.navbar h1 {
-  height: 80%;
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  font-weight: bolder;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
 }
 
 .linkSaverIcon {
   margin-left: 0.5%;
-  height: 60%;
-  vertical-align: middle;
+  width: 10%;
 }
 
-.userIcon {
-  margin-left: auto;
+.navLinks {
+  float: right;
   margin-right: 1%;
-  height: 60%;
 }
 
 .titleFont {
@@ -33,7 +49,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin-left: 1%;
   display: inline-block;
-  margin-top: 30px;
+  white-space: nowrap;
 }
 
 .standardFont {
@@ -44,18 +60,108 @@ body {
 }
 
 .container {
-  margin: 10% 5% 10% 5%;
+  margin: 10% 15% 10% 15%;
   height: auto;
   padding: 1%;
-  background-color: blueviolet;
   background-color: white;
   border: 2px solid black;
   border-radius: 10px;
   font-family: "Ubuntu", sans-serif;
 }
 
+.containerLogin {
+  margin: 5% 20% 5% 20%;
+  height: auto;
+  padding: 1%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.firstHalf {
+  height: 35%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.logInIcon {
+  height: 50%;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.signUpInput {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: .3s border-color;
+}
+
+.halfInputLeft {
+  margin: 0 1% 0 0;
+}
+
+.halfInputRight {
+  margin: 0 0 0 1%;
+}
+
+.signUpInput:hover {
+  border: 1px solid rgb(0, 118, 243);
+}
+
+.signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpButton {
+  display: inline-flex;
+  height: 30px;
+  width: 100px;
+  margin: 20px 20px 20px 20px;
+  border: 1x solid rgb(59, 59, 235);
+  border-radius: 10px;
+  background-color: rgb(0, 118, 243);
+  color: rgb(255, 255, 255);
+  font-size: .8em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.signUpButton a {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 118, 243);
+  text-decoration: none;
+  text-align: center;
+}
+
+.containerLeft {
+  width: 50%;
+  text-align: center;
+  color: rgb(0, 118, 243);
+}
+
+.containerRight {
+  width: 50%;
+  text-align: center;
+}
+
 .container .containerReferenzen h1 {
   color: black;
+}
+
+.secondHalf {
+  height: 35%;
 }
 
 .cards {
@@ -101,7 +207,7 @@ body {
   display: inline-flex;
   height: 40px;
   width: 150px;
-  border: 2px solid rgb(59, 59, 235);
+  border: 2px solid rgb(0, 118, 243);
   margin: 20px 20px 20px 20px;
   color: #BFC0C0;
   text-transform: uppercase;
@@ -133,7 +239,7 @@ body {
   width: 100%;
   height: 100%;
   left: -200px;
-  background: rgb(59, 59, 235);
+  background: rgb(0, 118, 243);
   position: absolute;
   transition: all .35s ease-Out;
   bottom: 0;
@@ -190,12 +296,12 @@ body {
   }
 
   .leftLink {
-    margin-right: 5%;
+    margin-right: 2%;
     display: inline-block;
   }
   
   .rightLink {
-    margin-left: 5%;
+    margin-left: 2%;
     display: inline-block;
   }
 }

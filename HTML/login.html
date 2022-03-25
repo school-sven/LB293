@@ -1,30 +1,65 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Link Saver</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="../assets/icons/websiteIcon.svg" />
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
+      <div class="navLeft">
         <img class="linkSaverIcon" src="../assets/icons/websiteIcon.svg" alt="Link Saver Icon" href="home.html"/>
         <h1 class="titleFont">Link Saver</h1>
-        <img src="../assets/icons/userIcon.svg" alt="userIcon" class="userIcon" />
+      </div>
+      <div class="navRight">
+        <div class="navLinks standardFont">
+          <a href="/index.html">Home</a>
+          <a href="/html/links.html">Links</a>
+          <a href="/html/login.html">Login</a>
+        </div>
+      </div>
     </nav>
+    <main>
+      <div class="containerLogin">
+        <div class="firstHalf" style="text-align: center;">
+          <img class="logInIcon" src="/assets/icons/log-in.icon.svg" alt="LogIn Icon">
+        </div>
+        <hr>
+        <div class="secondHalf">
+          <input type="text" class="signUpInput" placeholder="Username"/>
+          <input type="password" class="signUpInput" placeholder="Password">
+          <div class="signUp">
+            <button class="signUpButton" type="submit"><a href="/index.html"><strong>Login</strong></a></button>
+          </div>
+          <div class="signUp">
+            <div class="containerLeft">
+              <p><strong>Noch keinen Account?</strong></p>
+            </div>
+            <div class="containerRight">
+              <button class="signUpButton"><a href="/html/signUp.html"><strong>Sign Up</strong></a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
-      <div class="footer footer2 standardFont">
+      <div class="footer standardFont">
         <p class="footerLeft">© 2022 Sven Märki</p>
         <div class="footerMiddle">
           <a class="leftLink" href="impressum.html">Impressum</a>
           <a class="rightLink" href="about.html">About</a>
         </div>
         <div class="footerRight">
-          <a href="https://www.linkedin.com/in/sven-m%C3%A4rki-778628220/" target="_blank"><img class="linkedinIcon" src="/assets/icons/linkedin.svg" alt="LinkedIn Icon"></a>
+          <a href="https://www.linkedin.com/in/sven-m%C3%A4rki-778628220/" target="_blank">
+            <img class="linkedinIcon" src="/assets/icons/linkedin.svg" alt="LinkedIn Icon"/></a>
         </div>
       </div>
     </footer>
