@@ -15,6 +15,9 @@ function copyText(urlType) {
       case 5:
         var copiedText = "https://www.deepl.com/de/translator";
         break
+      case 6:
+        var copiedText = "https://try.vikunja.io";
+        break
       default:
         break;
     }

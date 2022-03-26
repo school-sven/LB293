@@ -23,20 +23,20 @@ body {
 }
 
 .navLeft {
+  width: 80%;
   display: flex;
   flex-direction: row;
 }
 
 .navRight {
+  width: 20%;
   display: flex;
-  flex-direction: row;
-  margin-right: 1%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .linkSaverIcon {
   margin-left: 0.5%;
-  width: 10%;
+  width: 3%;
 }
 
 .notDraggable {
@@ -45,11 +45,6 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-
-.navLinks {
-  float: right;
-  margin-right: 1%;
 }
 
 .titleFont {
@@ -75,6 +70,17 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   font-family: "Ubuntu", sans-serif;
+}
+
+.containerHome {
+  margin: 10% 15% 10% 15%;
+  height: auto;
+  padding: 1%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
 }
 
 .containerLogin {
@@ -151,12 +157,25 @@ body {
 .containerLeft {
   width: 50%;
   text-align: center;
-  color: rgb(0, 118, 243);
 }
 
 .containerRight {
   width: 50%;
   text-align: center;
+}
+
+.containerHomeLeft {
+  width: 50%;
+  text-align: center;
+}
+
+.containerHomeRight {
+  width: 50%;
+  text-align: center;
+}
+
+.containerHomeLeft p {
+  font-size: 150%;
 }
 
 .container .containerReferenzen h1 {
@@ -180,6 +199,17 @@ body {
   position: relative;
   max-width: 250px;
   max-height: 350px;
+  box-shadow: 0 40px 60px -6px black;
+  border-radius: 3%;
+  order: 4;
+}
+
+.cardHome {
+  margin: 40px;
+  position: relative;
+  max-width: 250px;
+  max-height: 350px;
+  margin-top: 0;
   box-shadow: 0 40px 60px -6px black;
   border-radius: 3%;
   order: 4;
